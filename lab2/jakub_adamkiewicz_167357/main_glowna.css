@@ -1,0 +1,16 @@
+h1 {
+  color: blue;
+  font-size: 300%;
+  text-align: center
+}
+img {
+  margin-left: 690px;
+  margin-top : -420px;
+}
+table {
+	margin-left: 50px;
+    margin-top : 120px;
+	font-size: 200%;
+	border-spacing: 1cm
+	
+}
