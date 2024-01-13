@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Language" content="pl" />
+<meta name="Author" content="Jakub Adamkiewicz" />
+<title>Historia lotów kosmicznych</title>
+<script src="kolorujtlo.js" type="text/javascript"></script>
+<script src="timedate.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="main_glowna.css" />
+
+</head>
+
+<body>
+<h1>Historia lotów kosmicznych</h1>
+
+<div id="zegarek"></div>
+<div id="data"></div>
+
+<div id="animacjaTestowa1" class="test-block">Klinknij, a się powiększe</div>
+
+<script>
+	
+	$("#animacjaTestowa1").on("click", function(){
+		$(this).animate({
+			width: "500px",
+			opacity: 0.4,
+			fontsize: "3em",
+			borderWidth: "10px"
+		}, 1500);
+	});
+		
+</script>
+
+<div id="animacjaTestowa2" class="test-block">Najedź kursorem, a się powiększe</div>
+
+<script>
+	
+$("#animacjaTestowa2").on({
+	"mouseover" : function(){
+		$(this).animate({
+			width: 300
+		}, 800);
+	},
+	"mouseout" : function() {
+		$(this).animate({
+			width: 200
+		}, 800);
+	}
+});
+
+</script>
+
+<div id="animacjaTestowa3" class="test-block">Klikaj, abym urósl</div>
+
+<script>
+	
+$("#animacjaTestowa3").on("click", function(){
+	if (!$(this).is(":animated")) {
+		$(this).animate({
+			width: "+=" + 50,
+			height: "+=" + 10,
+			opacity: "-=" + 0.1,
+			duration: 3000
+		});
+	}
+});
+		
+</script>
+
+<table>
+	<tr><td><a href ="strona_p5.html">Nieudane loty</a></td></tr>
+	<tr><td><a href ="strona_p5.html">Loty na marsa</a></td></tr>
+	<tr><td><a href ="strona_p5.html">Loty na orbite</a></td></tr>
+    <tr><td><a href ="strona_p5.html">Loty takie o</a></td></tr>
+    <tr><td><a href ="strona_p1.html">Loty na księżyc</a></td></tr>
+</table>
+<img src="statek.jpg" alt="Statek">
+
+<FORM METHOD="POST" NAME="background">
+	<INPUT TYPE="button" VALUE="żólty" ONCLICK="changeBackground('#FFF000')">
+	<INPUT TYPE="button" VALUE="czarny" ONCLICK="changeBackground('#000000')">
+	<INPUT TYPE="button" VALUE="bialy" ONCLICK="changeBackground('#FFFFFF')">
+	<INPUT TYPE="button" VALUE="zielony" ONCLICK="changeBackground('#00FF00')">
+	<INPUT TYPE="button" VALUE="niebieski" ONCLICK="changeBackground('#0000FF')">
+	<INPUT TYPE="button" VALUE="pomarańczowy" ONCLICK="changeBackground('#FF8000')">
+	<INPUT TYPE="button" VALUE="szary" ONCLICK="changeBackground('#c0c0c0')">
+	<INPUT TYPE="button" VALUE="czerwony" ONCLICK="changeBackground('#FF0000')">
+</FORM>
+
+</body>
+</html>
