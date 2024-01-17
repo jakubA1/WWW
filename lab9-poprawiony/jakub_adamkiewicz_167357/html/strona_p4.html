@@ -1,0 +1,46 @@
+	<style>
+	body{
+		background-image: url(./img/tlo_p.jpg);
+		background-size: cover;
+        background-repeat: no-repeat;
+	}
+	</style>
+	<header>
+        <h1>Nauka w Kosmosie</h1>
+    </header>
+	
+	<div class="content">
+	
+		<section class="p1">
+			<h2>Badania na Międzynarodowej Stacji Kosmicznej</h2>
+			<p>ISS jest laboratorium naukowym, gdzie przeprowadzane są eksperymenty w mikrograwitacji, które nie mogłyby zostać wykonane na Ziemi.</p>
+			<img src="./img/ISS.jpg" alt="ISS">
+		</section>
+		
+		<section class="p1">
+			<h2>Obserwacje Astronomiczne</h2>
+			<p>Teleskopy kosmiczne takie jak Hubble pozwalają astronomom na obserwowanie gwiazd i galaktyk w świetle, które nie dociera do powierzchni Ziemi.</p>
+			<img src="./img/Hubb.jpg" alt="Teleskop Hubbla">
+		</section>
+		
+		<section class="p1">
+			<h2>Badania Planetarne</h2>
+			<p>Misje takie jak Voyager i Cassini przekazują nam informacje o planetach naszego Układu Słonecznego i ich księżycach.</p>
+			<img src="./img/Voyager.jpg" alt="Voyager">
+		</section>
+	
+	</div>
+	
+	<div style="item-align:center; position: fixed; bottom : 0; padding: 10px;">
+		<FORM METHOD="POST" NAME="background">
+		<INPUT TYPE="button" VALUE="żółty" ONCLICK="changeBackground('#FFF000')"> 
+		<INPUT TYPE="button" VALUE="czarny" ONCLICK="changeBackground('#000000')"> 
+		<INPUT TYPE="button" VALUE="biały" ONCLICK="changeBackground('#FFFFFF')"> 
+		<INPUT TYPE="button" VALUE="zielony" ONCLICK="changeBackground('#00FF00')"> 
+		<INPUT TYPE="button" VALUE="niebieski" ONCLICK="changeBackground('#0000FF')">
+		<INPUT TYPE="button" VALUE="pomarańczowy" ONCLICK="changeBackground('#FF8000')"> 
+		<INPUT TYPE="button" VALUE="szary" ONCLICK="changeBackground('#c0c0c0')"> 
+		<INPUT TYPE="button" VALUE="czerwony" ONCLICK="changeBackground('#FF0000')">
+		<INPUT TYPE="button" VALUE="grafika" ONCLICK="changeBackgroundPicture('./img/tlo_p.jpg')">
+		</FORM>
+	</div>
