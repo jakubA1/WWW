@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt</title>
+</head>
+<body>
+
+<style>
+	.contact {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+	}
+
+	.contact h2 {
+		color: #333;
+	}
+
+	.contact p {
+		color: #333;
+		text-align: left;
+	}
+
+	.contact form {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.contact input[type="text"],
+
+	.contact textarea {
+		padding: 10px;
+		margin-top: 5px;
+		border: 1px solid #ccc;
+		border-radius: 4px;
+	}
+
+	.contact input[type="submit"] {
+		padding: 10px 20px;
+		background-color: #007bff;
+		color: white;
+		border: none;
+		border-radius: 4px;
+		cursor: pointer;
+		transition: background-color 0.3s ease;
+	}
+
+	.contact input[type="submit"]:hover {
+		background-color: #0056b3;
+	}
+</style>
+
+<div class="contact">
+	<h2>Kontakt</h2>
+	<p>Wyslij nam maila, jeżeli masz pytania.</p>
+	<form action="167357@student.uwm.edu.pl" method="post" enctype="text/plain">
+		Twój e-mail: <input type="text" name="email"><br>
+		Twoja wiadomość:<br>
+		<textarea name="wiadomosc" rows="5" cols="40"></textarea><br>
+		<input type="submit" value="Wyślij">
+	</form>
+</div>
+
+</body>
+</html>
