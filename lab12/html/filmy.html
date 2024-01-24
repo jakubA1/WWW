@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona z Filmami</title>
+    <link rel="stylesheet" href="./css/films.css">
+</head>
+<body>
+
+<style>
+	body{
+		background-image: url(./img/tlo_p.jpg);
+		background-size: cover;
+        background-repeat: no-repeat;
+	}
+</style>
+
+<header>
+    <h1>Strona z Filmami</h1>
+</header>
+
+<section class="film-gallery">
+    <div class="film">
+        <iframe src="https://www.youtube.com/embed/v1RfDc9RZc0?si=X59qg7QgBmAu3j3s"" frameborder="0" allowfullscreen></iframe>
+        <p>Krótka Historia Rakiet i Lotów Kosmicznych</p>
+    </div>
+    <div class="film">
+        <iframe src="https://www.youtube.com/embed/Neyj2rQZxYE?si=AhvHfLjepLSDJiya" frameborder="0" allowfullscreen></iframe>
+        <p>Pierwsi Ludzie w Kosmosie</p>
+    </div>
+    <div class="film">
+        <iframe src="https://www.youtube.com/embed/PLcE3AI9wwE?si=x682MMTQdU5kv0Mp" frameborder="0" allowfullscreen></iframe>
+        <p>A Quick History of Space Exploration</p>
+    </div>
+</section>
+
+<div style="item-align:center; position: fixed; bottom : 0; padding: 10px;">
+	<FORM METHOD="POST" NAME="background">
+	<INPUT TYPE="button" VALUE="żółty" ONCLICK="changeBackground('#FFF000')"> 
+	<INPUT TYPE="button" VALUE="czarny" ONCLICK="changeBackground('#000000')"> 
+	<INPUT TYPE="button" VALUE="biały" ONCLICK="changeBackground('#FFFFFF')"> 
+	<INPUT TYPE="button" VALUE="zielony" ONCLICK="changeBackground('#00FF00')"> 
+	<INPUT TYPE="button" VALUE="niebieski" ONCLICK="changeBackground('#0000FF')">
+	<INPUT TYPE="button" VALUE="pomarańczowy" ONCLICK="changeBackground('#FF8000')"> 
+	<INPUT TYPE="button" VALUE="szary" ONCLICK="changeBackground('#c0c0c0')"> 
+	<INPUT TYPE="button" VALUE="czerwony" ONCLICK="changeBackground('#FF0000')">
+	<INPUT TYPE="button" VALUE="grafika" ONCLICK="changeBackgroundPicture('./img/tlo_p.jpg')">
+	</FORM>
+</div>
+
+</body>
+</html>
